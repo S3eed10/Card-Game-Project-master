@@ -106,7 +106,6 @@ const winConditon = () => {
 const stopTimer = () => {
     timerOut = false;
     clearInterval(timerId);
-    time = 0;
     timerCount();
 };
 
@@ -131,8 +130,8 @@ const decHert = () => {
     const heartsList = document.querySelectorAll("#heart li");
 
     for (heart of heartsList) {
-        if (heart.style.display !== "none") {
-            heart.style.display == "none";
+        if (heart.style.display != "none") {
+            heart.style.display = "none";
             break;
         };
     };
